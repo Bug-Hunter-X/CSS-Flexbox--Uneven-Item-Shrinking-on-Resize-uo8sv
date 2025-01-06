@@ -1,0 +1,11 @@
+The following CSS code snippet intends to create a responsive layout using flexbox, but it fails to distribute space evenly among items within a container when the screen size is reduced. This happens due to an incorrect use of the `flex-shrink` property.  The items are shrinking unevenly because their content size (width) varies.  This is an uncommon error because developers often focus on `flex-grow` for expansion and overlook the implications of `flex-shrink`. 
+
+```css
+.container {
+display: flex;
+}
+
+.item {
+width: 200px;
+}
+```
