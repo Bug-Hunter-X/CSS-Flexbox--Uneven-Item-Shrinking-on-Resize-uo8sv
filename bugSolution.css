@@ -1,0 +1,14 @@
+To correct the uneven shrinking, set `flex-shrink: 0;` on the `.item` class. This prevents the items from shrinking, allowing the flex container to distribute the available space more evenly.
+
+```css
+.container {
+display: flex;
+}
+
+.item {
+width: 200px;
+flex-shrink: 0;
+}
+```
+
+This ensures all items maintain their minimum width, leading to a more balanced and responsive layout.
